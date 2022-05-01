@@ -64,7 +64,9 @@
       <section class="banner">
         <div class="container">
           <h1 class="banner-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="banner-btn">Заказать услугу</button>
+          <button type="button" class="banner-btn" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -129,13 +131,19 @@
           <h2 class="biz-title">Чем мы занимаемся</h2>
           <ul class="biz-item">
             <li class="biz-img">
-              <img src="./images/img-1.jpg" width="370" alt="клавиатура" />
+              <div class="biz-text-decoration">
+                <img src="./images/img-1.jpg" width="370" alt="клавиатура" />
+
+                <p class="biz-text">Десктопные приложения</p>
+              </div>
             </li>
             <li class="biz-img">
               <img src="./images/img-2.jpg" width="370" alt="телефон" />
+              <p class="biz-text">Мобильные приложения</p>
             </li>
             <li class="biz-img">
               <img src="./images/img-3.jpg" width="370" alt="планшет" />
+              <p class="biz-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -463,5 +471,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
