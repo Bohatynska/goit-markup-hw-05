@@ -419,7 +419,7 @@ img {
   justify-content: center;
   align-items: center;
   transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function));
+  transition-timing-function: var(--transition-timing-function);
 }
 .team-soc-link:hover,
 .team-soc-link:focus {
@@ -753,7 +753,6 @@ img {
   transition: opacity 500ms, visibility 500ms;
 }
 .backdrop.is-hidden .modal {
-
   transform: rotate(-100deg);
 }
 .modal {
@@ -765,8 +764,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-   transition: transform 500ms;
- 
+  transition: transform 500ms;
 }
 .modal-close-btn {
   position: absolute;
