@@ -417,8 +417,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color fill var(--transition-duration)
-    var(--transition-timing-function);
+  transition-property: background-color, fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 .team-soc-link:hover,
 .team-soc-link:focus {
